@@ -1,1 +1,402 @@
-ajout du fichier html 
+
+<!DOCTYPE html>
+<html>
+  <button id="menu-toggle">☰ Menu</button>
+<nav id="menu" class="hidden">
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À Propos</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('visible');
+});
+</script> 
+<style>body{
+background-color:lightblue;</style>
+<style></style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+}
+
+        /* Barre de navigation */
+.navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+}
+
+.navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+            color: #ff9800;
+            transform: scale(1.1);
+}
+
+        /* Bouton stylisé */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+}
+
+        button:hover {
+            background-color: #e68900;
+            transform: scale(1.1);
+}
+
+        /* Conteneur */
+.container {
+            padding: 50px;
+            text-align: center;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur  KankSoft!</h1>
+        <button>Découvrir</button>
+    </div>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+}
+
+        /* Barre de navigation */
+.navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+}
+
+.navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+}
+
+.navbar a:hover {
+            background-color: #575757;
+}
+
+        /* Responsive: Menu en colonne pour les petits écrans */
+        @media (max-width: 768px) {
+.navbar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+}
+
+.navbar a {
+                width: 100%;
+                text-align: center;
+}
+}
+    </style>
+</head>
+
+
+    <div class="container">
+    </div>
+<meta charset="UFT-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+<style>
+      /* Style général */
+  body{
+      font-family:Arial, sans-serif;
+      margin:0;
+      padding :0;
+      box-sizing:border-box;
+  }
+       /*conteneur principal */
+    .container{
+      display :flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding :20px;
+    }
+       /*images responsives*/
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+        /*bouton responsive */
+    button{
+        padding :10px 20p ;
+        font-size :16px;
+        border :none ;
+        background-color :#007bff;
+         color: white;
+        cursor :pointer;
+        transition :0.3s;
+    }
+      button:hover {
+        background-color:#0056b3;
+      }
+       /*media Query pour mobiles*/
+       @media(max-width:768px){
+         .service{
+      flex-direction:column;
+      align-items:center;
+         }
+         button{
+           width :100%;
+           font-size :18px;
+         }
+       }
+</style>
+<form id="contactForm">
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Message envoyé avec succès!");
+});
+</script>
+<style >
+/* style général */
+  body{
+font-family: 'Poppins', sans-serif;
+        margin:0;
+        padding: 0;
+        background:#f5f5f5;
+        color:#333;
+  }
+      /* Sections bien définies*/
+section {
+    padding: 60px 30px;
+    max-width:90%;
+    margin:10px auto;
+    text-align: 
+    bacground:white;
+    border-radius: 12px;
+    box-shadow: 05px 15px rgba(0,0,0.1);
+  border:2px solid rgba(0,0,0.1);
+}
+       /*Titres et textes */
+  h2{
+       font-size:28px;
+       color:#252;
+       font-weight:bold;
+  }
+     p{
+      font-size: 18px;
+      line-height:1.1;
+     }
+     /*boutons stylisés */
+     #cta{
+     padding:15px 30px;
+     background-color:#ff9800;
+     color:white;
+     font-size:18px;
+     border:none;
+     cursor:pointer;
+     transition:0.3s;
+   }
+        #cta:hover{
+    bacground-color:#e68900;
+   }
+      /*Services et partenaires */
+      .service-list,
+      .partner-list{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap:wrap;
+   }
+     .service,.partner{
+       padding:15px;
+       border-radius: 8px;
+       font-weight:bold;
+       bacground:rgba(255,255,255,0.8);
+       box-shadow:02px 5px rgba(0,0,0,0.1);
+       transition :transform 0.3s;
+       color:#%%%%£;
+  }
+        .service.hover 
+        .partner.hover{
+     transform: scale(1.1);
+     bacground:rgba(255,255,255,1);
+  }
+      /*Formulaire de contact */
+        form{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+      max-width:300px;
+      margin:auto;
+   }
+         input,textarea{
+      width :100%;
+      padding :10px;
+      border:1px solid purple;
+      border-radius:200px;
+   }
+      button[type="submit"]{
+    padding:15px;
+    font-size:13px;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+    color :#ff4667;
+  }
+  button[type="submit"]:hover{
+    bacground:#e68900
+  }
+</style>
+<style>
+   /* Animation fluide*/
+   .hidden{
+          opcity: 0;
+          transform:
+    translateY(50px);
+          transition:
+    opacity 1s ease-out;
+   }
+   .visible {
+            opacity: 1;
+            transform:
+    translateY(0)
+   }
+</style>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KankSoft Plate forme publicitaire</title>
+    <style>
+        /* Animation fluide avec !important*/.hidden {
+    important ;
+          transform:
+    translateY(50px)!important;
+          transition: 
+    opacity 1s ease-out!important, transform 1s ease-out!important;
+        }
+        .visible {
+    opacity:1 !important;
+    transform :
+       translateY(0)!important;
+        }
+    </style>
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1);}
+            50% { transform: scale(1.1);}
+            100% { transform: scale(1);}
+}
+
+        #cta {
+            padding: 15px 30px;
+            background-color: white;
+            color: #ff9800;
+            font-size: 18px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+            transition: 0.3s;
+}
+
+        #cta:hover {
+            background-color: #e68900;
+            color: white;
+            transform: scale(1.1);
+}
+    </style>
+     <meta
+ name="viewport" content="width=device-width,initial-scale=1.0">
+ <title> KankSoft-Plateforme publicitaire</title>
+        <link
+   rel="stylesheet"
+   href="style.css"> 
+   </head>
+ <body>
+      <section class="hero">
+<p> Boostez votre visibilite avec nous!</p>
+<button id="cta">Commencer</button>
+      </section>
+      <section class="about">
+<h2>Notre objectif</h2>
+<p>Nous aidons les entreprises a promouvoir leurs marques avec des solutions digitales innovantes</p>
+      </section>
+      <section class="services">
+  <h2>Nos services </h2>
+  <div class="services.list">
+  <div class="service">Marketing Digital</div>
+  <div class ="service ">Développement web</div>
+  <div class="service">Branding</div>
+  </div>
+      </section>
+      <section class ="Contact">
+  <h2>Contactez-nous</h2>
+     <form>
+           <input type="text"
+           placeholder="+243 816745160">
+           <input type="email" placeholder="Kankheritier1@gmail.com">
+     </form>
+    <section class="about"><h2>Qui sommes-nous?</h2>
+ 	<p>Kanksoft est une plate forme moderne qui aide les grandes entreprises de promouvoir leurs marques.</p></section>
+ 	<section 
+ 	class="Partners">
+ 	  <h2>Nos entreprises partenaires </h2>
+ 	  <div 
+ 	  class="partner-list "><div
+ 	  clas="partner">entreprise 1</div>
+ 	  <div class="partner">entreprise 2</div>
+ 	  <div class="partner ">entreprise 3</div>
+ 	  </div>
+ 	<script
+ 	src="script.js"></script>
+ 	<script>
+ 	   document.addEventListener("DOMContentLoaded",function() {
+ 	          const sections=
+ 	   document.querySelectorAll(".hidden");
+ 	          const observer
+ 	= new IntersectionObserver(entries =>
+ 	  {
+ 	    entries.forEach(entry =>
+ 	  {
+ 	        if
+ 	(entry.isIntersecting)
+ 	  {
+ 	    entry.target.classList.add("visible");
+ 	    observer.unobserve(entry.traget);
+ 	  }
+ 	  } );
+ 	  }, { threshold:0.3});
+ 	  sections.forEach(section=> observer.observe (section));
+ 	   });
+ 	</script>
+ </body>
+  </html>
